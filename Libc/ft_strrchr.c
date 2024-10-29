@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:39:44 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/29 20:49:23 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/10/29 21:04:32 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (result);
 }
-
-/* #include <stdio.h>
+/* 
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)
