@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:31:41 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/29 21:33:03 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:33:54 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*strnstr(const char *big, const char *little, size_t len)
 {
@@ -17,41 +19,41 @@ char	*strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	j = 0;
-	/* checking if needle is empty */
-	if (needle[0] == 0)
-		return ((char *)haystack);
-	/* loop over haystack while we haven't looped over the whole
+	/* checking if little is empty */
+	if (little[0] == 0)
+		return ((char *)big);
+	/* loop over big while we haven't looped over the whole
 		* thing or until i = len
 		*/
-	while (haystack[i] && i < len)
+	while (big[i] && i < len)
 	{
 		/* inside this first while loop
-			* we are looping over the haystack as long as
+			* we are looping over the big as long as
 			* the current character is the correct character
-			* in the needle
+			* in the little
 			*/
-		while (haystack[i + j] == needle[j] && haystack[i + j] && i + j < len)
+		while (big[i + j] == little[j] && big[i + j] && i + j < len)
 		{
 			/* we are inside this loop while the current
-				* haystack character is the correct character in the
-				* needle so we just increment j to offset our haystack
+				* big character is the correct character in the
+				* little so we just increment j to offset our big
 				*/
 			j++;
-			/* if needle[j] == 0, this means we read the whole
-				* needle, so we found it in the haystack
+			/* if little[j] == 0, this means we read the whole
+				* little, so we found it in the big
 				* we can return a pointer to the first character of
-				* the needle
+				* the little
 				* that why we used 2 counters, now we can offset our
-				* haystack pointer by i, which is the position of the
-				* first character of the needle
+				* big pointer by i, which is the position of the
+				* first character of the little
 				*/
-			if (needle[j] == 0)
-				return ((char *)haystack + i);
+			if (little[j] == 0)
+				return ((char *)big + i);
 		}
 		i++;
 		/* don't forget to set j to 0 again, otherwise you will
-			* be offsetted in the needle beginning from the second
-			* haystack character
+			* be offsetted in the little beginning from the second
+			* big character
 			*/
 		j = 0;
 	}

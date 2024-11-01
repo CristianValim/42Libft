@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 20:29:03 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/29 20:29:57 by cvalim-d         ###   ########.fr       */
+/*   Created: 2024/10/28 13:40:18 by cvalim-d          #+#    #+#             */
+/*   Updated: 2024/11/01 16:30:52 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c)
+#include "libft.h"
+
+int	ft_isprint(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
+	if (c >= 33 || c <= 126)
+		return (1);
+	return (0);
 }

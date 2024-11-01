@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 13:36:24 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/28 13:37:10 by cvalim-d         ###   ########.fr       */
+/*   Created: 2024/10/29 21:04:47 by cvalim-d          #+#    #+#             */
+/*   Updated: 2024/11/01 16:32:14 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include "libft.h"
+
+int	ft_strncmp(char *s1, char *s2, size_t n)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
+	size_t i;
+
+	i = 0;
+	while (i < n && s1[i] && s2[i])
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	if (i < n)
+		return (s1[i] - s2[i]);
 	return (0);
 }

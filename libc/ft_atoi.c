@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:29:38 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/29 21:30:45 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:29:41 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_atoi(char *str)
 {
-	long	num;
-	int		sign;
+	long num;
+	int sign;
 
 	sign = 1;
 	num = 0;

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:31:21 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/28 14:44:50 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:29:35 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

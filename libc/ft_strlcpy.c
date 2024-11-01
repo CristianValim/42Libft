@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:12:38 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/28 16:15:44 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:32:06 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {

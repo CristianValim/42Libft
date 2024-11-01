@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:17:02 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/29 20:13:50 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:32:02 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <bsd/string.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -31,13 +30,14 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		dest[dsize] = '\0';
 	return (i + strlen(src));
 }
+/* #include <stdio.h>
 
 int	main(void)
 {
 	char dest1[] = "Hello";
 	char src1[] = " World";
 
-    strcpy(dest1, "Hello");
+	strcpy(dest1, "Hello");
 
 	unsigned int result1 = strlcat(dest1, src1, strlen(dest1));
 	unsigned int result2 = ft_strlcat(dest1, src1, strlen(dest1));
@@ -81,4 +81,4 @@ int	main(void)
 		result10, dest5);
 
 	return (0);
-}
+} */

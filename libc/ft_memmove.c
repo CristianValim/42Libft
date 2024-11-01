@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:57:19 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/28 15:52:28 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:31:16 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

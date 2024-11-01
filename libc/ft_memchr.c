@@ -3,22 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cvalim-d <cvalim-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:07:10 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/10/29 21:20:28 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:30:56 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
 	unsigned char	search;
-    size_t i;
+	size_t			i;
 
 	str = (unsigned char *)s;
-	search = (unsigned char )c;
-    i = 0;
+	search = (unsigned char)c;
+	i = 0;
 	while (i < n)
 	{
 		if (str[i] == search)
@@ -31,7 +33,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 /* #include <stdio.h>
 #include <string.h>
 
-int main() {
+int	main(void) {
 	const char *str = "Don't Panic!";
 
 	printf("Test 1: Searching for 'P' in \"%s\"\n", str);
@@ -54,5 +56,5 @@ int main() {
 	printf("Expected: %p\n", memchr(str, 'D', 0));
 	printf("Result: %p\n\n", ft_memchr(str, 'D', 0));
 
-	return 0;
+	return (0);
 } */
