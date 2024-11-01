@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:39:44 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 16:52:24 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 17:02:02 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (result);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -36,4 +36,4 @@ int	main(void)
 	printf("Found:%s\n", ft_strrchr(str, 'a'));
 	printf("Found:%s\n", strrchr(str, 'a'));
 	return (0);
-}
+} */

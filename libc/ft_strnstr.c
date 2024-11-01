@@ -6,13 +6,13 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:31:41 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 16:33:54 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 17:04:12 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t i;
 	size_t j;

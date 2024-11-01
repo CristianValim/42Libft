@@ -1,6 +1,6 @@
 NAME = libft
-SRC = $(wildcard libc/*.c)
-OBJS := $(SRC:%.c=%.o)
+SRC = $(wildcard *.c)
+OBJS = $(SRC:%.c=%.o)
 CC = cc
 CCFLAGS = -Wall -Wextra -Werror
 
@@ -10,7 +10,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CCFLAGS) $^ -o $@
 
 clean:
-	$(RM) $(OBJS_ALL)
+	$(RM) $(OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
