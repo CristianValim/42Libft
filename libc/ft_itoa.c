@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:18:40 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 19:28:17 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/04 20:26:48 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,51 +37,19 @@ char	*ft_itoa(int n)
 	}
 	if (n < 0)
 		string[0] = '-';
+	if (n == 0)
+		string[0] = '0';
 	string[length] = '\0';
 	return (string);
 }
 
 static int	int_length(long n)
 {
+	if (n == 0)
+		return (2);
 	if (n < 0)
 		return (1 + int_length(-n));
 	if (n < 10)
 		return (1);
 	return (1 + int_length(n / 10));
 }
-
-/*
-int	main(void)
-{
-	char *result;
-
-	result = ft_itoa(0);
-	printf("Input: 0, Output: \"%s\"\n", result);
-	free(result);
-
-	result = ft_itoa(42);
-	printf("Input: 42, Output: \"%s\"\n", result);
-	free(result);
-
-	result = ft_itoa(-42);
-	printf("Input: -42, Output: \"%s\"\n", result);
-	free(result);
-
-	result = ft_itoa(123456);
-	printf("Input: 123456, Output: \"%s\"\n", result);
-	free(result);
-
-	result = ft_itoa(-123456);
-	printf("Input: -123456, Output: \"%s\"\n", result);
-	free(result);
-
-	result = ft_itoa(2147483647);
-	printf("Input: %d, Output: \"%s\"\n", 2147483647, result);
-	free(result);
-
-	result = ft_itoa(-2147483648);
-	printf("Input: %ld, Output: \"%s\"\n", -2147483648, result);
-	free(result);
-
-	return (0);
-} */
