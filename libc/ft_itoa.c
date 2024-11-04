@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:18:40 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 20:26:48 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/04 20:49:36 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_itoa(int n)
 static int	int_length(long n)
 {
 	if (n == 0)
-		return (2);
+		return (1);
 	if (n < 0)
 		return (1 + int_length(-n));
 	if (n < 10)

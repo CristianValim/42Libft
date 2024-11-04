@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:16:33 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 16:58:33 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/04 20:45:06 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_element;
 
 	new_list = NULL;
-	while (lst != NULL)
+	if (!lst || !f || !del)
+		return (NULL);
+	while (lst)
 	{
 		new_element = ft_lstnew(f(lst->content));
 		if (!new_element)
