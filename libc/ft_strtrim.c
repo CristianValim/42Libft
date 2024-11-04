@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:20:37 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 17:09:30 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/04 17:17:50 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ static char	*new_string(const char *s1, size_t start, size_t length)
 	}
 	return (string);
 }
+
 static int	trimming(const char *set, char c)
 {
 	int	i;
