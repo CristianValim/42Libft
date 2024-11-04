@@ -1,40 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/01 18:03:15 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 23:05:08 by cvalim-d         ###   ########.fr       */
+/*   Created: 2024/11/04 13:58:11 by cvalim-d          #+#    #+#             */
+/*   Updated: 2024/11/04 14:17:51 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	int		length;
 	char	*string;
-	int		total_length;
 	int		i;
-	int		j;
 
 	i = 0;
-	j = 0;
-	total_length = ft_strlen((char *)s1) + ft_strlen((char *)s2);
-	string = malloc(sizeof(char) * (total_length + 1));
+	length = ft_strlen(s);
+	string = malloc((length + 1) * sizeof(char));
 	if (!string)
 		return (NULL);
-	while (s1[i])
+	while (s[i])
 	{
-		string[i] = s1[i];
+		string[i] = f(i, s[i]);
 		i++;
 	}
-	while (s2[j])
-	{
-		string[i + j] = s2[j];
-		j++;
-	}
-	string[i + j] = '\0';
+	string[length] = '\0';
 	return (string);
 }
+/* char	to_uppercase(unsigned int index, char c)
+{
+	(void)index;
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
+}
+
+int	main(void)
+{
+	char *result = ft_strmapi("Hello World!", to_uppercase);
+	if (result)
+	{
+		printf("Resultado: %s\n", result);
+		free(result);
+	}
+	return (0);
+} */

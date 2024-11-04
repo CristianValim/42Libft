@@ -6,11 +6,10 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:20:37 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 18:20:46 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 23:07:06 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	
 }

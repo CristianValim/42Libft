@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 17:29:06 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 17:43:48 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/01 23:04:08 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,8 @@ int	main(void)
 	start = 7;
 	len = 5;
 	result = ft_substr(str, start, len);
-	printf("Test 1: '%s' -> Expected: '%s', Received: '%s'\n", str, "World",
+	printf("Test 1: '%s' -> Expected: '%s', Received: '%s'\n",
+	str, "World",
 		result);
 	free(result); // Free allocated memory
 

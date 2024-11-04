@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 21:31:41 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 23:06:39 by cvalim-d         ###   ########.fr       */
+/*   Created: 2024/11/04 14:16:05 by cvalim-d          #+#    #+#             */
+/*   Updated: 2024/11/04 14:24:04 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t	i;
-	size_t	j;
+	int	i;
 
 	i = 0;
-	j = 0;
-	if (little[0] == 0)
-		return ((char *)big);
-	while (big[i] && i < len)
+	while (s[i])
 	{
-		while (big[i + j] == little[j] && big[i + j] && i + j < len)
-		{
-			j++;
-			if (little[j] == 0)
-				return ((char *)big + i);
-		}
+		f(i, &s[i]);
 		i++;
-		j = 0;
 	}
-	return (0);
 }
+
+/* void	to_uppercase(unsigned int index, char *c)
+{
+	(void)index;
+	if (*c >= 'a' && *c <= 'z')
+		*c = *c - 32;
+}
+
+int	main(void)
+{
+	char str[] = "Hello, World!";
+
+	printf("Original string: %s\n", str);
+	ft_striteri(str, to_uppercase);
+	printf("Modified string: %s\n", str);
+
+	return (0);
+} */
