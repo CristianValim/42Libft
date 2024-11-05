@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:18:40 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 23:37:48 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:53:26 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,19 @@ char	*ft_itoa(int n)
 		return (NULL);
 	while (nbr != 0)
 	{
-		string[i] = ((nbr % 10) + 48);
-		nbr = nbr / 10;
-		i--;
+		string[i--] = (nbr % 10) + '0';
+		nbr /= 10;
 	}
 	if (n < 0)
 		string[0] = '-';
 	if (n == 0)
 		string[0] = '0';
-	string[length] = '\0';
 	return (string);
 }
 
+/* Calculates the length of the string representation of an integer.
+(long n) > The integer to calculate the length for.
+return (int) > The length of the string representation of the integer. */
 static int	int_length(long n)
 {
 	if (n == 0)
