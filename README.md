@@ -9,6 +9,7 @@ The libft project is a foundational project at 42 School where students create t
 ## Functions
 
 ### Memory Management Functions
+***
 
 #### `int ft_atoi(char *str);`
 |           Description           |             Param. #1              |     Return Value      |
@@ -51,6 +52,7 @@ The libft project is a foundational project at 42 School where students create t
 | Fills memory with a constant byte | `s` - Pointer to the memory area | `c` - Byte value to set | `len` - Number of bytes to set | Pointer to the memory area |
 
 ### String Manipulation Functions
+***
 
 #### `char *ft_strdup(char *src);`
 |     Description     |              Param. #1              |           Return Value           |
@@ -113,6 +115,7 @@ The libft project is a foundational project at 42 School where students create t
 | Extracts a substring from a string | `s` - The original string | `start` - The starting index | `len` - The length of the substring | Pointer to the substring |
 
 ### Character Checking and Conversion Functions
+***
 
 #### `int ft_isalnum(int c);`
 |              Description              |          Param. #1           |                         Return Value                          |
@@ -159,7 +162,8 @@ The libft project is a foundational project at 42 School where students create t
 | :----------------------------------------------: | :-------------------------: | :-------------------------------------------: | :----------: |
 | Applies a function to each character of a string | `s` - The string to iterate | `f` - The function to apply to each character |     None     |
 
-### File Descriptor Functions
+### File Descriptor Functions (Bonus)
+***
 
 #### `void ft_putchar_fd(char c, int fd);`
 |               Description                |           Param. #1           |         Param. #2          | Return Value |
@@ -181,7 +185,8 @@ The libft project is a foundational project at 42 School where students create t
 | :-----------------------------------: | :------------------------: | :------------------------: | :----------: |
 | Outputs a string to a file descriptor | `s` - The string to output | `fd` - The file descriptor |     None     |
 
-### Linked List Functions
+### Linked List Functions (Bonus)
+***
 
 #### `t_list *ft_lstnew(void *content);`
 |            Description            |                      Param. #1                      |        Return Value        |
