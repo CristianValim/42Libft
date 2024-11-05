@@ -6,12 +6,17 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:12:38 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 16:32:06 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:50:20 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Copies a string to another, with size limitations.
+(char *dest) > The destination string.
+(char *src) > The source string.
+(unsigned int size) > The total size of the destination buffer.
+return (unsigned int) > Total length of the string they tried to create. */
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;

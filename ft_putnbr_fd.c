@@ -6,12 +6,16 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:30:39 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 14:39:33 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:46:47 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Outputs an integer to a file descriptor.
+(int n) > The integer to output.
+(int fd) > The file descriptor.
+return (void) > None. */
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	nbr;

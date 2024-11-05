@@ -6,12 +6,17 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 15:31:59 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 16:29:51 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:36:59 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Allocates memory for an array and initializes it to zero.
+(size_t nmemb) > Number of elements.
+(size_t size) > Size of each element.
+return (void *) > Pointer to the allocated memory or NULL if allocation fails.
+*/
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*zero_setted;

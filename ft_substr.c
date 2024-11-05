@@ -6,12 +6,17 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 17:29:06 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 23:04:08 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:52:52 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Extracts a substring from a string.
+(char const *s) > The original string.
+(unsigned int start) > The starting index.
+(size_t len) > The length of the substring.
+return (char *) > Pointer to the substring. */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*sub_string;

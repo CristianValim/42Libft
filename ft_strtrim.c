@@ -6,15 +6,16 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:20:37 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 17:17:50 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:52:38 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	trimming(const char *set, char c);
-static char	*new_string(const char *s1, size_t start, size_t length);
-
+/* Trims characters from the beginning and end of a string.
+(char const *s1) > The string to trim.
+(char const *set) > The set of characters to trim.
+return (char *) > Pointer to the trimmed string. */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int	i;

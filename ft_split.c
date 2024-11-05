@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 21:57:05 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 13:53:37 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:54:49 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@ static int	word_count(const char *s, char c);
 static char	*fill_str(const char *s, char c, int *start);
 static void	*freeing(char **splitted, int i);
 
+/* Splits a string into an array of strings using a delimiter.
+(char const *s) > The string to split.
+(char c) > The delimiter character.
+return (char **) > Pointer to the array of strings. */
 char	**ft_split(char const *s, char c)
 {
 	char	**splitted;
@@ -42,6 +46,10 @@ char	**ft_split(char const *s, char c)
 	return (splitted);
 }
 
+/* Counts the number of words in a string separated by a delimiter.
+(const char *s) > The string to count words in.
+(char c) > The delimiter character.
+return (int) > The number of words in the string. */
 static int	word_count(const char *s, char c)
 {
 	int	words;
@@ -63,6 +71,11 @@ static int	word_count(const char *s, char c)
 	return (words);
 }
 
+/* Fills a string with characters from the original string up to the delimiter.
+(const char *s) > The original string.
+(char c) > The delimiter character.
+(int *start) > Pointer to the starting index.
+return (char *) > Pointer to the filled string. */
 static char	*fill_str(const char *s, char c, int *start)
 {
 	int		i;
@@ -88,6 +101,10 @@ static char	*fill_str(const char *s, char c, int *start)
 	return (word);
 }
 
+/* Frees the memory allocated for the array of strings.
+(char **splitted) > Pointer to the array of strings.
+(int i) > The index up to which the memory should be freed.
+return (void *) > None. */
 static void	*freeing(char **splitted, int i)
 {
 	while (i-- > 0)

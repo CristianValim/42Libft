@@ -6,12 +6,16 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:58:11 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 14:17:51 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:50:50 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Applies a function to each character of a string to create a new string.
+(char const *s) > The string to iterate.
+(char (*f)(unsigned int, char)) > The function to apply to each character.
+return (char *) > Pointer to the new string. */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		length;

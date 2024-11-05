@@ -6,12 +6,17 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:07:10 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 16:30:56 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:40:25 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Scans memory for a character.
+(const void *s) > Pointer to the memory area.
+(int c) > Character to search for.
+(size_t n) > Number of bytes to scan.
+return (void *) > Pointer to the matching byte or NULL if not found. */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;

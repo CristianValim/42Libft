@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:18:40 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 20:49:36 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:36:32 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 static int	int_length(long n);
 
+/* Converts an integer to a string.
+(int n) > The integer to convert.
+return (char *) > Pointer to the string representing the integer. */
 char	*ft_itoa(int n)
 {
 	int		length;

@@ -6,12 +6,16 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:03:15 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/01 23:05:08 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:49:46 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Concatenates two strings into a new string.
+(char const *s1) > The first string.
+(char const *s2) > The second string.
+return (char *) > Pointer to the new string. */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*string;

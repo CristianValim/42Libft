@@ -6,12 +6,18 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:16:33 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/04 20:45:06 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:38:09 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Creates a new linked list by applying a function to each element of an 
+existing list.
+(t_list *lst) > The original list.
+(void *(*f)(void *)) > The function to apply to each element.
+(void (*del)(void *)) > The function to delete the content of the elements.
+return (t_list *) > Pointer to the new list. */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
