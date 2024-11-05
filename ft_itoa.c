@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:18:40 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:36:32 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:37:48 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_itoa(int n)
 	if (nbr < 0)
 		nbr = -nbr;
 	i = length - 1;
-	string = malloc((length + 1) * sizeof(char));
+	string = ft_calloc((length + 1), sizeof(char));
 	if (!string)
 		return (NULL);
 	while (nbr != 0)

@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 17:29:06 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:52:52 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:47:37 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,22 +19,20 @@
 return (char *) > Pointer to the substring. */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char			*sub_string;
-	unsigned int	string_lenght;
-	size_t			i;
+	char	*sub_string;
+	size_t	string_length;
 
-	i = 0;
-	string_lenght = ft_strlen((char *)s);
-	if (start >= string_lenght)
+	if (!s)
+		return (NULL);
+	string_length = ft_strlen(s);
+	if (start >= string_length)
 		return (ft_strdup(""));
-	if (len > string_lenght - start)
-		len = string_lenght - start;
-	sub_string = malloc(sizeof(char) * len + 1);
+	if (len > string_length - start)
+		len = string_length - start;
+	sub_string = ft_calloc(len + 1, sizeof(char));
 	if (!sub_string)
 		return (NULL);
-	while (i < len)
-		sub_string[i++] = s[start++];
-	sub_string[len] = '\0';
+	ft_strlcpy(sub_string, s + start, len + 1);
 	return (sub_string);
 }
 

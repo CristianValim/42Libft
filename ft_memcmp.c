@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:20:59 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:41:24 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:30:23 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 (const void *s1) > Pointer to the first memory area.
 (const void *s2) > Pointer to the second memory area.
 (size_t n) > Number of bytes to compare.
-return (int) > : < 0 if s1 is less than s2, > 0 if s1 is greater than s2, 
+return (int) > : < 0 if s1 is less than s2, > 0 if s1 is greater than s2,
 0 if s1 is equal to s2. */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -29,8 +29,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if ((unsigned char)str1[i] != (unsigned char)str2[i])
-			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
 		i++;
 	}
 	return (0);

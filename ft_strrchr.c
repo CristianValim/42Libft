@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:39:44 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:52:23 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:19:57 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,22 @@
 /* Locates the last occurrence of a character in a string.
 (const char *s) > The string to search in.
 (int c) > The character to locate.
-return (char *) > Pointer to the last occurrence of the character or 
+return (char *) > Pointer to the last occurrence of the character or
 NULL if not found. */
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*result;
+	char	*last_char;
 
-	result = NULL;
+	last_char = NULL;
 	while (*s)
 	{
-		if (*s == c)
-			result = (char *)s;
+		if (*s == (char)c)
+			last_char = (char *)s;
 		s++;
 	}
-	if (*s == c)
-		return ((char *)s);
-	return (result);
+	if (*s == (char)c)
+		last_char = (char *)s;
+	return (last_char);
 }
 
 /* #include <stdio.h>

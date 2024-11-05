@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:29:38 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:37:14 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:25:15 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	is_tab(char c);
 
 /* Converts the initial portion of the string pointed to by str to int.
 (char *str) > The string to be converted to int.
-return ((int)num * sign); > The converted value or 0 if no valid conversion 
+return ((int)num * sign); > The converted value or 0 if no valid conversion
 could be performed. */
 int	ft_atoi(char *str)
 {
@@ -42,7 +42,9 @@ int	ft_atoi(char *str)
 	return ((int)num * sign);
 }
 
-// Checks if the character is a whitespace or tab
+/* Checks if the character is a whitespace or tab.
+(char c) > The character to be checked.
+return (int) > 1 if the character is a whitespace or tab, 0 otherwise. */
 static int	is_tab(char c)
 {
 	while ((c >= 9 && c <= 13) || c == 32)

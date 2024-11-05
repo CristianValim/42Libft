@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:25:56 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:47:09 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:43:03 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,5 @@ return (void) > None. */
 void	ft_putstr_fd(char *s, int fd)
 {
 	while (*s)
-	{
-		ft_putchar_fd(*s, fd);
-		s++;
-	}
+		ft_putchar_fd(*s++, fd);
 }

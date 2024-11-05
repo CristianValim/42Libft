@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 21:57:05 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:54:49 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:21:38 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words = word_count(s, c);
-	splitted = malloc(words * sizeof(char *));
+	splitted = ft_calloc(words + 1, sizeof(char *));
 	if (!splitted)
 		return (NULL);
 	while (i < words)
@@ -88,7 +88,7 @@ static char	*fill_str(const char *s, char c, int *start)
 		(*start)++;
 	while (s[*start] && s[*start + len] != c)
 		len++;
-	word = malloc((len + 1) * sizeof(char));
+	word = ft_calloc((len + 1), sizeof(char));
 	if (!word)
 		return (NULL);
 	while (i < len)

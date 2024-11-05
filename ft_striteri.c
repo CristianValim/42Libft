@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:16:05 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:49:32 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:48:38 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,13 @@
 return (void) > None. */
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int	i;
+	unsigned int	i;
 
+	if (!s || !f)
+		return ;
 	i = 0;
-	while (s[i])
-	{
-		f(i, &s[i]);
-		i++;
-	}
+	while (*s)
+		f(i++, s++);
 }
 
 /* void	to_uppercase(unsigned int index, char *c)

@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:57:19 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:42:44 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:37:20 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	destine = (unsigned char *)dest;
 	if (!src && !dest)
 		return (dest);
-	if (destine > source)
+	if (destine > source && destine < source + n)
 		while (n-- > 0)
 			destine[n] = source[n];
 	else
-		while (n--)
-			*destine++ = *source++;
+		ft_memcpy(dest, src, n);
 	return (dest);
 }
 /* #include <stdio.h>

@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:42:09 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:38:53 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:08:13 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_element;
 
-	new_element = malloc(sizeof(t_list));
+	new_element = ft_calloc(1, sizeof(t_list));
 	if (!new_element)
 		return (NULL);
 	new_element->content = content;

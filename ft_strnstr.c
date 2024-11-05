@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:31:41 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:52:05 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:47:03 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,21 @@
 (const char *big) > The string to search in.
 (const char *little) > The substring to search for.
 (size_t len) > The maximum number of characters to search.
-return (char *) > Pointer to the first occurrence of the substring or
+return (char *) > Pointer to the first occurrence of the substring or 
 NULL if not found. */
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	i;
-	size_t	j;
+	size_t	little_len;
 
-	i = 0;
-	j = 0;
-	if (little[0] == 0)
+	if (*little == '\0')
 		return ((char *)big);
-	while (big[i] && i < len)
+	little_len = ft_strlen(little);
+	while (*big && len >= little_len)
 	{
-		while (big[i + j] == little[j] && big[i + j] && i + j < len)
-		{
-			j++;
-			if (little[j] == 0)
-				return ((char *)big + i);
-		}
-		i++;
-		j = 0;
+		if (*big == *little && ft_strncmp(big, little, little_len) == 0)
+			return ((char *)big);
+		big++;
+		len--;
 	}
-	return (0);
+	return (NULL);
 }

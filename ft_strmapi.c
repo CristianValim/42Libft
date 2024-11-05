@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:58:11 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:50:50 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:00:06 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,23 +18,23 @@
 return (char *) > Pointer to the new string. */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		length;
-	char	*string;
-	int		i;
+	char			*string;
+	char			*start;
+	unsigned int	i;
 
-	i = 0;
-	length = ft_strlen(s);
-	string = malloc((length + 1) * sizeof(char));
+	if (!s || !f)
+		return (NULL);
+	string = ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!string)
 		return (NULL);
-	while (s[i])
-	{
-		string[i] = f(i, s[i]);
-		i++;
-	}
-	string[length] = '\0';
-	return (string);
+	start = string;
+	i = 0;
+	while (*s)
+		*string++ = f(i++, *s++);
+	*string = '\0';
+	return (start);
 }
+
 /* char	to_uppercase(unsigned int index, char c)
 {
 	(void)index;

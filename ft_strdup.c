@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 16:15:34 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:49:16 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:44:24 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,17 @@
 return (char *) > Pointer to the duplicated string. */
 char	*ft_strdup(char *src)
 {
-	char	*dest;
+	char	*result;
+	char	*duplicated;
 	int		src_length;
-	int		i;
 
-	i = 0;
+	duplicated = result;
 	src_length = ft_strlen(src);
-	dest = malloc(src_length + 1);
-	if (dest == NULL)
+	result = ft_calloc(src_length + 1, sizeof(char));
+	if (result == NULL)
 		return (NULL);
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	while (*src)
+		*duplicated++ = *src++;
+	*duplicated = '\0';
+	return (result);
 }

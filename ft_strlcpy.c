@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:12:38 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:50:20 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 22:14:59 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,32 @@
 
 /* Copies a string to another, with size limitations.
 (char *dest) > The destination string.
-(char *src) > The source string.
-(unsigned int size) > The total size of the destination buffer.
-return (unsigned int) > Total length of the string they tried to create. */
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+(const char *src) > The source string.
+(size_t size) > The total size of the destination buffer.
+return (size_t) > Total length of the string they tried to create. */
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	unsigned int	i;
+	const char	*src_start = src;
 
-	i = 0;
-	if (size == 0)
+	if (size != 0)
 	{
-		i = 0;
-		while (src[i] != '\0')
+		while (--size != 0)
 		{
-			i++;
+			*dest = *src;
+			if (*src == '\0')
+				return (src - src_start);
+			dest++;
+			src++;
 		}
-		return (i);
+		if (size == 0)
+			if (size != 0)
+				*dest = '\0';
 	}
-	while (i < size - 1 && src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
+	while (*src)
+		src++;
+	return (src - src_start);
 }
+
 /* #include <stdio.h>
 
 int	main(void)

@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:03:15 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:49:46 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:40:32 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,25 +20,18 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*string;
 	int		total_length;
-	int		i;
-	int		j;
+	int		s1_len;
+	int		s2_len;
 
-	i = 0;
-	j = 0;
-	total_length = ft_strlen((char *)s1) + ft_strlen((char *)s2);
-	string = malloc(sizeof(char) * (total_length + 1));
+	if (!s1 || !s2)
+		return (NULL);
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	total_length = s1_len + s2_len;
+	string = ft_calloc(total_length + 1, sizeof(char));
 	if (!string)
 		return (NULL);
-	while (s1[i])
-	{
-		string[i] = s1[i];
-		i++;
-	}
-	while (s2[j])
-	{
-		string[i + j] = s2[j];
-		j++;
-	}
-	string[i + j] = '\0';
+	ft_strlcpy(string, s1, s1_len + 1);
+	ft_strlcpy(string + s1_len, s2, s2_len + 1);
 	return (string);
 }

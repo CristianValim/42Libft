@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:17:02 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:50:04 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:56:41 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	}
 	if (i < size)
 		dest[dsize] = '\0';
-	return (i + strlen(src));
+	return (i + ft_strlen(src));
 }
 /* #include <stdio.h>
 
