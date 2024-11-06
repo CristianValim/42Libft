@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:57:19 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 21:37:20 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/06 00:12:21 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 (const void *src) > Pointer to the source memory area.
 (size_t n) > Number of bytes to copy.
 return (void *) > Pointer to the destination memory area. */
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	unsigned char	*source;
 	unsigned char	*destine;
@@ -26,11 +26,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	destine = (unsigned char *)dest;
 	if (!src && !dest)
 		return (dest);
-	if (destine > source && destine < source + n)
-		while (n-- > 0)
-			destine[n] = source[n];
+	if (destine > source && destine < source + len)
+		while (len-- > 0)
+			destine[len] = source[len];
 	else
-		ft_memcpy(dest, src, n);
+		ft_memcpy(dest, src, len);
 	return (dest);
 }
 /* #include <stdio.h>

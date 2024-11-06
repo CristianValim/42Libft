@@ -6,12 +6,11 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:29:38 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 21:25:15 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/06 00:07:39 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	is_tab(char c);
 
@@ -19,7 +18,7 @@ static int	is_tab(char c);
 (char *str) > The string to be converted to int.
 return ((int)num * sign); > The converted value or 0 if no valid conversion
 could be performed. */
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	long	num;
 	int		sign;

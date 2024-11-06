@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 13:44:01 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:50:33 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/06 00:46:03 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 /* Returns the length of a string.
 (const char *s) > The string to measure.
-return (int) > Length of the string. */
-int	ft_strlen(const char *s)
+return (size_t) > Length of the string. */
+size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
