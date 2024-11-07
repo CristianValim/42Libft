@@ -1,6 +1,13 @@
 # 42Libft
 
+<div align="center">
+
 ![Banner](./42cover.png)
+
+[![42Intra](/42badge.svg)](https://profile.intra.42.fr/users/cvalim-d)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+
+</div>
 
 ## Project Description
 
@@ -10,69 +17,69 @@ The libft project is a foundational project at 42 School where students create t
 
   <details>
   <summary>Memory Management Functions</summary>
-  <ul>
-    <li><a href="#int-ft_atoi-char-str">ft_atoi</a></li>
-    <li><a href="#void-ft_bzero-void-s-size_t-n">ft_bzero</a></li>
-    <li><a href="#void-ft_calloc-size_t-nmemb-size_t-size">ft_calloc</a></li>
-    <li><a href="#void-ft_memchr-const-void-s-int-c-size_t-n">ft_memchr</a></li>
-    <li><a href="#int-ft_memcmp-const-void-s1-const-void-s2-size_t-n">ft_memcmp</a></li>
-    <li><a href="#void-ft_memcpy-void-dest-const-void-src-size_t-n">ft_memcpy</a></li>
-    <li><a href="#void-ft_memmove-void-dest-const-void-src-size_t-n">ft_memmove</a></li>
-    <li><a href="#void-ft_memset-void-s-int-c-size_t-len">ft_memset</a></li>
+    <ul>
+    <li><a href="#ft_atoi">ft_atoi</a></li>
+    <li><a href="#ft_bzero">ft_bzero</a></li>
+    <li><a href="#ft_calloc">ft_calloc</a></li>
+    <li><a href="#ft_memchr">ft_memchr</a></li>
+    <li><a href="#ft_memcmp">ft_memcmp</a></li>
+    <li><a href="#ft_memcpy">ft_memcpy</a></li>
+    <li><a href="#ft_memmove">ft_memmove</a></li>
+    <li><a href="#ft_memset">ft_memset</a></li>
   </ul>
   </details>
   <details>
   <summary>String Manipulation Functions</summary>
   <ul>
-    <li><a href="#char-ft_strdup-char-src">ft_strdup</a></li>
-    <li><a href="#char-ft_strchr-const-char-s-int-c">ft_strchr</a></li>
-    <li><a href="#char-ft_strjoin-char-const-s1-char-const-s2">ft_strjoin</a></li>
-    <li><a href="#unsigned-int-ft_strlcat-char-dest-const-char-src-size_t-size">ft_strlcat</a></li>
-    <li><a href="#unsigned-int-ft_strlcpy-char-dest-char-src-unsigned-int-size">ft_strlcpy</a></li>
-    <li><a href="#int-ft_strlen-const-char-s">ft_strlen</a></li>
-    <li><a href="#char-ft_strmapi-char-const-s-char-funsigned-int-char">ft_strmapi</a></li>
-    <li><a href="#char-ft_strnstr-const-char-big-const-char-little-size_t-len">ft_strnstr</a></li>
-    <li><a href="#int-ft_strncmp-char-s1-char-s2-size_t-n">ft_strncmp</a></li>
-    <li><a href="#char-ft_strrchr-const-char-s-int-c">ft_strrchr</a></li>
-    <li><a href="#char-ft_strtrim-char-const-s1-char-const-set">ft_strtrim</a></li>
-    <li><a href="#char-ft_substr-char-const-s-unsigned-int-start-size_t-len">ft_substr</a></li>
+    <li><a href="#ft_strdup">ft_strdup</a></li>
+    <li><a href="#ft_strchr">ft_strchr</a></li>
+    <li><a href="#ft_strjoin">ft_strjoin</a></li>
+    <li><a href="#ft_strlcat">ft_strlcat</a></li>
+    <li><a href="#ft_strlcpy">ft_strlcpy</a></li>
+    <li><a href="#ft_strlen">ft_strlen</a></li>
+    <li><a href="#ft_strmapi">ft_strmapi</a></li>
+    <li><a href="#ft_strnstr">ft_strnstr</a></li>
+    <li><a href="#ft_strncmp">ft_strncmp</a></li>
+    <li><a href="#ft_strrchr">ft_strrchr</a></li>
+    <li><a href="#ft_strtrim">ft_strtrim</a></li>
+    <li><a href="#ft_substr">ft_substr</a></li>
   </ul>
   </details>
   <details>
   <summary>Character Checking and Conversion Functions</summary>
   <ul>
-    <li><a href="#int-ft_isalnum-int-c">ft_isalnum</a></li>
-    <li><a href="#int-ft_isalpha-int-c">ft_isalpha</a></li>
-    <li><a href="#int-ft_isascii-int-c">ft_isascii</a></li>
-    <li><a href="#int-ft_isdigit-int-c">ft_isdigit</a></li>
-    <li><a href="#int-ft_isprint-int-c">ft_isprint</a></li>
-    <li><a href="#int-ft_tolower-int-c">ft_tolower</a></li>
-    <li><a href="#int-ft_toupper-int-c">ft_toupper</a></li>
-    <li><a href="#char-ft_itoa-int-n">ft_itoa</a></li>
-    <li><a href="#void-ft_striteri-char-s-void-funsigned-int-char">ft_striteri</a></li>
+    <li><a href="#ft_isalnum">ft_isalnum</a></li>
+    <li><a href="#ft_isalpha">ft_isalpha</a></li>
+    <li><a href="#ft_isascii">ft_isascii</a></li>
+    <li><a href="#ft_isdigit">ft_isdigit</a></li>
+    <li><a href="#ft_isprint">ft_isprint</a></li>
+    <li><a href="#ft_tolower">ft_tolower</a></li>
+    <li><a href="#ft_toupper">ft_toupper</a></li>
+    <li><a href="#ft_itoa">ft_itoa</a></li>
+    <li><a href="#ft_striteri">ft_striteri</a></li>
   </ul>
   </details>
   <details>
   <summary>File Descriptor Functions (Bonus)</summary>
   <ul>
-    <li><a href="#void-ft_putchar_fd-char-c-int-fd">ft_putchar_fd</a></li>
-    <li><a href="#void-ft_putendl_fd-char-s-int-fd">ft_putendl_fd</a></li>
-    <li><a href="#void-ft_putnbr_fd-int-n-int-fd">ft_putnbr_fd</a></li>
-    <li><a href="#void-ft_putstr_fd-char-s-int-fd">ft_putstr_fd</a></li>
+    <li><a href="#ft_putchar_fd">ft_putchar_fd</a></li>
+    <li><a href="#ft_putendl_fd">ft_putendl_fd</a></li>
+    <li><a href="#ft_putnbr_fd">ft_putnbr_fd</a></li>
+    <li><a href="#ft_putstr_fd">ft_putstr_fd</a></li>
   </ul>
   </details>
   <details>
   <summary>Linked List Functions (Bonus)</summary>
   <ul>
-    <li><a href="#t_list-ft_lstnew-void-content">ft_lstnew</a></li>
-    <li><a href="#void-ft_lstadd_front-t_list-lst-t_list-new">ft_lstadd_front</a></li>
-    <li><a href="#int-ft_lstsize-t_list-lst">ft_lstsize</a></li>
-    <li><a href="#t_list-ft_lstlast-t_list-lst">ft_lstlast</a></li>
-    <li><a href="#void-ft_lstadd_back-t_list-lst-t_list-new">ft_lstadd_back</a></li>
-    <li><a href="#void-ft_lstdelone-t_list-lst-void-delvoid">ft_lstdelone</a></li>
-    <li><a href="#void-ft_lstclear-t_list-lst-void-delvoid">ft_lstclear</a></li>
-    <li><a href="#void-ft_lstiter-t_list-lst-void-fvoid">ft_lstiter</a></li>
-    <li><a href="#t_list-ft_lstmap-t_list-lst-void-fvoid-void-delvoid">ft_lstmap</a></li>
+    <li><a href="#ft_lstnew">ft_lstnew</a></li>
+    <li><a href="#ft_lstadd_front">ft_lstadd_front</a></li>
+    <li><a href="#ft_lstsize">ft_lstsize</a></li>
+    <li><a href="#ft_lstlast">ft_lstlast</a></li>
+    <li><a href="#ft_lstadd_back">ft_lstadd_back</a></li>
+    <li><a href="#ft_lstdelone">ft_lstdelone</a></li>
+    <li><a href="#ft_lstclear">ft_lstclear</a></li>
+    <li><a href="#ft_lstiter">ft_lstiter</a></li>
+    <li><a href="#ft_lstmap">ft_lstmap</a></li>
   </ul>
   </details>
 
@@ -82,7 +89,7 @@ The libft project is a foundational project at 42 School where students create t
 ***
 
 <details>
-<summary><strong>ft_atoi</strong></summary>
+<summary><strong id="ft_atoi">ft_atoi</strong></summary>
 
 #### `int ft_atoi(char *str);`
 |           Description           |             Param. #1              |     Return Value      |
@@ -94,7 +101,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_bzero</strong></summary>
+<summary><strong id="ft_bzero">ft_bzero</strong></summary>
 
 #### `void ft_bzero(void *s, size_t n);`
 |               Description               |            Param. #1             |              Param. #2               | Return Value |
@@ -106,7 +113,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_calloc</strong></summary>
+<summary><strong id="ft_calloc">ft_calloc</strong></summary>
 
 #### `void *ft_calloc(size_t nmemb, size_t size);`
 |                       Description                        |          Param. #1           |           Param. #2           |          Return Value           |
@@ -118,7 +125,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_memchr</strong></summary>
+<summary><strong id="ft_memchr">ft_memchr</strong></summary>
 
 #### `void *ft_memchr(const void *s, int c, size_t n);`
 |         Description          |            Param. #1             |           Param. #2           |           Param. #3           |                   Return Value                    |
@@ -130,7 +137,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_memcmp</strong></summary>
+<summary><strong id="ft_memcmp">ft_memcmp</strong></summary>
 
 #### `int ft_memcmp(const void *s1, const void *s2, size_t n);`
 |        Description        |                Param. #1                |                Param. #2                 |            Param. #3             |                                  Return Value                                   |
@@ -142,7 +149,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_memcpy</strong></summary>
+<summary><strong id="ft_memcpy">ft_memcpy</strong></summary>
 
 #### `void *ft_memcpy(void *dest, const void *src, size_t n);`
 |    Description     |                    Param. #1                    |                 Param. #2                 |           Param. #3           |              Return Value              |
@@ -154,7 +161,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_memmove</strong></summary>
+<summary><strong id="ft_memmove">ft_memmove</strong></summary>
 
 #### `void *ft_memmove(void *dest, const void *src, size_t n);`
 |             Description              |                    Param. #1                    |                 Param. #2                 |           Param. #3           |              Return Value              |
@@ -166,7 +173,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_memset</strong></summary>
+<summary><strong id="ft_memset">ft_memset</strong></summary>
 
 #### `void *ft_memset(void *s, int c, size_t len);`
 |            Description            |            Param. #1             |        Param. #2        |           Param. #3            |        Return Value        |
@@ -181,7 +188,7 @@ The libft project is a foundational project at 42 School where students create t
 ***
 
 <details>
-<summary><strong>ft_strdup</strong></summary>
+<summary><strong id="ft_strdup">ft_strdup</strong></summary>
 
 #### `char *ft_strdup(char *src);`
 |     Description     |              Param. #1              |           Return Value           |
@@ -193,7 +200,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strchr</strong></summary>
+<summary><strong id="ft_strchr">ft_strchr</strong></summary>
 
 #### `char *ft_strchr(const char *s, int c);`
 |                       Description                       |           Param. #1           |           Param. #2           |                             Return Value                              |
@@ -205,7 +212,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strjoin</strong></summary>
+<summary><strong id="ft_strjoin">ft_strjoin</strong></summary>
 
 #### `char *ft_strjoin(char const *s1, char const *s2);`
 |                Description                 |        Param. #1        |        Param. #2         |       Return Value        |
@@ -217,7 +224,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strlcat</strong></summary>
+<summary><strong id="ft_strlcat">ft_strlcat</strong></summary>
 
 #### `unsigned int ft_strlcat(char *dest, const char *src, size_t size);`
 |                        Description                        |            Param. #1            |         Param. #2         |                     Param. #3                     |                  Return Value                   |
@@ -229,7 +236,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strlcpy</strong></summary>
+<summary><strong id="ft_strlcpy">ft_strlcpy</strong></summary>
 
 #### `unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);`
 |                    Description                    |            Param. #1            |         Param. #2         |                     Param. #3                     |                  Return Value                   |
@@ -241,7 +248,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strlen</strong></summary>
+<summary><strong id="ft_strlen">ft_strlen</strong></summary>
 
 #### `int ft_strlen(const char *s);`
 |          Description           |          Param. #1          |     Return Value     |
@@ -253,7 +260,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strmapi</strong></summary>
+<summary><strong id="ft_strmapi">ft_strmapi</strong></summary>
 
 #### `char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
 |                               Description                               |          Param. #1          |                   Param. #2                   |       Return Value        |
@@ -265,7 +272,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strnstr</strong></summary>
+<summary><strong id="ft_strnstr">ft_strnstr</strong></summary>
 
 #### `char *ft_strnstr(const char *big, const char *little, size_t len);`
 |                       Description                        |            Param. #1            |               Param. #2                |                     Param. #3                      |                             Return Value                              |
@@ -277,7 +284,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strncmp</strong></summary>
+<summary><strong id="ft_strncmp">ft_strncmp</strong></summary>
 
 #### `int ft_strncmp(char *s1, char *s2, size_t n);`
 |                 Description                 |        Param. #1        |        Param. #2         |                     Param. #3                     |                                  Return Value                                   |
@@ -289,7 +296,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strrchr</strong></summary>
+<summary><strong id="ft_strrchr">ft_strrchr</strong></summary>
 
 #### `char *ft_strrchr(const char *s, int c);`
 |                      Description                       |           Param. #1           |           Param. #2           |                             Return Value                             |
@@ -301,7 +308,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_strtrim</strong></summary>
+<summary><strong id="ft_strtrim">ft_strtrim</strong></summary>
 
 #### `char *ft_strtrim(char const *s1, char const *set);`
 |                       Description                       |         Param. #1         |               Param. #2               |         Return Value          |
@@ -313,7 +320,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_substr</strong></summary>
+<summary><strong id="ft_substr">ft_substr</strong></summary>
 
 #### `char *ft_substr(char const *s, unsigned int start, size_t len);`
 |            Description             |         Param. #1         |          Param. #2           |              Param. #3              |       Return Value       |
@@ -328,7 +335,7 @@ The libft project is a foundational project at 42 School where students create t
 ***
 
 <details>
-<summary><strong>ft_isalnum</strong></summary>
+<summary><strong id="ft_isalnum">ft_isalnum</strong></summary>
 
 #### `int ft_isalnum(int c);`
 |              Description              |          Param. #1           |                         Return Value                          |
@@ -340,7 +347,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_isalpha</strong></summary>
+<summary><strong id="ft_isalpha">ft_isalpha</strong></summary>
 
 #### `int ft_isalpha(int c);`
 |             Description             |          Param. #1           |                         Return Value                          |
@@ -352,7 +359,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_isascii</strong></summary>
+<summary><strong id="ft_isascii">ft_isascii</strong></summary>
 
 #### `int ft_isascii(int c);`
 |                 Description                 |          Param. #1           |                         Return Value                          |
@@ -364,7 +371,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_isdigit</strong></summary>
+<summary><strong id="ft_isdigit">ft_isdigit</strong></summary>
 
 #### `int ft_isdigit(int c);`
 |           Description            |          Param. #1           |                         Return Value                          |
@@ -376,7 +383,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_isprint</strong></summary>
+<summary><strong id="ft_isprint">ft_isprint</strong></summary>
 
 #### `int ft_isprint(int c);`
 |            Description             |          Param. #1           |                         Return Value                          |
@@ -388,7 +395,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_tolower</strong></summary>
+<summary><strong id="ft_tolower">ft_tolower</strong></summary>
 
 #### `int ft_tolower(int c);`
 |                 Description                  |           Param. #1            |      Return Value       |
@@ -400,7 +407,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_toupper</strong></summary>
+<summary><strong id="ft_toupper">ft_toupper</strong></summary>
 
 #### `int ft_toupper(int c);`
 |                 Description                 |           Param. #1            |      Return Value       |
@@ -412,7 +419,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_itoa</strong></summary>
+<summary><strong id="ft_itoa">ft_itoa</strong></summary>
 
 #### `char *ft_itoa(int n);`
 |           Description           |          Param. #1           |                  Return Value                  |
@@ -424,7 +431,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_striteri</strong></summary>
+<summary><strong id="ft_striteri">ft_striteri</strong></summary>
 
 #### `void ft_striteri(char *s, void (*f)(unsigned int, char *));`
 |                   Description                    |          Param. #1          |                   Param. #2                   | Return Value |
@@ -439,7 +446,7 @@ The libft project is a foundational project at 42 School where students create t
 ***
 
 <details>
-<summary><strong>ft_putchar_fd</strong></summary>
+<summary><strong id="ft_putchar_fd">ft_putchar_fd</strong></summary>
 
 #### `void ft_putchar_fd(char c, int fd);`
 |               Description                |           Param. #1           |         Param. #2          | Return Value |
@@ -451,7 +458,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_putendl_fd</strong></summary>
+<summary><strong id="ft_putendl_fd">ft_putendl_fd</strong></summary>
 
 #### `void ft_putendl_fd(char *s, int fd);`
 |                         Description                          |         Param. #1          |         Param. #2          | Return Value |
@@ -463,7 +470,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_putnbr_fd</strong></summary>
+<summary><strong id="ft_putnbr_fd">ft_putnbr_fd</strong></summary>
 
 #### `void ft_putnbr_fd(int n, int fd);`
 |               Description               |          Param. #1          |         Param. #2          | Return Value |
@@ -475,7 +482,7 @@ The libft project is a foundational project at 42 School where students create t
 <br>
 
 <details>
-<summary><strong>ft_putstr_fd</strong></summary>
+<summary><strong id="ft_putstr_fd">ft_putstr_fd</strong></summary>
 
 #### `void ft_putstr_fd(char *s, int fd);`
 |              Description              |         Param. #1          |         Param. #2          | Return Value |
@@ -490,7 +497,7 @@ The libft project is a foundational project at 42 School where students create t
 ***
 
 <details>
-<summary><strong>ft_lstnew</strong></summary>
+<summary><strong id="ft_lstnew">ft_lstnew</strong></summary>
 
 #### `t_list *ft_lstnew(void *content);`
 |            Description            |                      Param. #1                      |        Return Value        |
