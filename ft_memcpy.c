@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:39:10 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:42:27 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:17:28 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	destine = (unsigned char *)dest;
 	source = (unsigned char *)src;
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	while (n > 0)
 	{
 		*(destine++) = *(source++);
@@ -60,4 +62,7 @@ int	main(void)
 	char empty_dest[50];
 	ft_memcpy(empty_dest, empty_src, 0);
 	printf("Test 4 - Copying zero bytes: %s\n", empty_dest);
+
+	printf("Test 5 - NULL params: %p\n", ft_memcpy(((void *)0), ((void *)0),
+			13));
 } */
