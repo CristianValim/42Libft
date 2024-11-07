@@ -1,6 +1,6 @@
 # 42Libft
 
-![Banner](./cover.png)
+![Banner](./42cover.png)
 
 ## Project Description
 
