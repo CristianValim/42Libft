@@ -18,7 +18,6 @@ The libft project is a foundational project at 42 School where students create t
   <details>
   <summary>Memory Management Functions</summary>
     <ul>
-    <li><a href="#ft_atoi">ft_atoi</a></li>
     <li><a href="#ft_bzero">ft_bzero</a></li>
     <li><a href="#ft_calloc">ft_calloc</a></li>
     <li><a href="#ft_memchr">ft_memchr</a></li>
@@ -48,6 +47,8 @@ The libft project is a foundational project at 42 School where students create t
   <details>
   <summary>Character Checking and Conversion Functions</summary>
   <ul>
+    <li><a href="#ft_atoi">ft_atoi</a></li>
+    <li><a href="#ft_itoa">ft_itoa</a></li>
     <li><a href="#ft_isalnum">ft_isalnum</a></li>
     <li><a href="#ft_isalpha">ft_isalpha</a></li>
     <li><a href="#ft_isascii">ft_isascii</a></li>
@@ -55,7 +56,6 @@ The libft project is a foundational project at 42 School where students create t
     <li><a href="#ft_isprint">ft_isprint</a></li>
     <li><a href="#ft_tolower">ft_tolower</a></li>
     <li><a href="#ft_toupper">ft_toupper</a></li>
-    <li><a href="#ft_itoa">ft_itoa</a></li>
     <li><a href="#ft_striteri">ft_striteri</a></li>
   </ul>
   </details>
@@ -87,18 +87,6 @@ The libft project is a foundational project at 42 School where students create t
 
 ### Memory Management Functions
 ***
-
-<details>
-<summary><strong id="ft_atoi">ft_atoi</strong></summary>
-
-#### `int ft_atoi(char *str);`
-|           Description           |             Param. #1              |     Return Value      |
-| :-----------------------------: | :--------------------------------: | :-------------------: |
-| Converts a string to an integer | `str` - The string to be converted | The converted integer |
-
-</details>
-
-<br>
 
 <details>
 <summary><strong id="ft_bzero">ft_bzero</strong></summary>
@@ -335,6 +323,30 @@ The libft project is a foundational project at 42 School where students create t
 ***
 
 <details>
+<summary><strong id="ft_atoi">ft_atoi</strong></summary>
+
+#### `int ft_atoi(char *str);`
+|           Description           |             Param. #1              |     Return Value      |
+| :-----------------------------: | :--------------------------------: | :-------------------: |
+| Converts a string to an integer | `str` - The string to be converted | The converted integer |
+
+</details>
+
+<br>
+
+<details>
+<summary><strong id="ft_itoa">ft_itoa</strong></summary>
+
+#### `char *ft_itoa(int n);`
+|           Description           |          Param. #1           |                  Return Value                  |
+| :-----------------------------: | :--------------------------: | :--------------------------------------------: |
+| Converts an integer to a string | `n` - The integer to convert | Pointer to the string representing the integer |
+
+</details>
+
+<br>
+
+<details>
 <summary><strong id="ft_isalnum">ft_isalnum</strong></summary>
 
 #### `int ft_isalnum(int c);`
@@ -413,18 +425,6 @@ The libft project is a foundational project at 42 School where students create t
 |                 Description                 |           Param. #1            |      Return Value       |
 | :-----------------------------------------: | :----------------------------: | :---------------------: |
 | Converts a lowercase character to uppercase | `c` - The character to convert | The converted character |
-
-</details>
-
-<br>
-
-<details>
-<summary><strong id="ft_itoa">ft_itoa</strong></summary>
-
-#### `char *ft_itoa(int n);`
-|           Description           |          Param. #1           |                  Return Value                  |
-| :-----------------------------: | :--------------------------: | :--------------------------------------------: |
-| Converts an integer to a string | `n` - The integer to convert | Pointer to the string representing the integer |
 
 </details>
 

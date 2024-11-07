@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:29:38 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/06 00:07:39 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:03:16 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,25 +50,3 @@ static int	is_tab(char c)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	const char *test1 = "42";
-	const char *test2 = "   -42";
-	const char *test3 = "4193 with words";
-	const char *test4 = "words and 987";
-	const char *test5 = "-91283472332";
-
-	printf("Test 1: \"%s\" -> Expected: 42, Received: %d\n", test1,
-		ft_atoi(test1));
-	printf("Test 2: \"%s\" -> Expected: -42, Received: %d\n", test2,
-		ft_atoi(test2));
-	printf("Test 3: \"%s\" -> Expected: 4193, Received: %d\n", test3,
-		ft_atoi(test3));
-	printf("Test 4: \"%s\" -> Expected: 0, Received: %d\n", test4,
-		ft_atoi(test4));
-	printf("Test 5: \"%s\" -> Expected: -2147483648, Received: %d\n", test5,
-		ft_atoi(test5));
-
-	return (0);
-} */

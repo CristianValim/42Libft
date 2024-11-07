@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:53:45 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:39:12 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:20:23 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_lstsize(t_list *lst)
 	i = 0;
 	while (lst != NULL)
 	{
-		i++;
+		++i;
 		lst = lst->next;
 	}
 	return (i);

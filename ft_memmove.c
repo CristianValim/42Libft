@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:57:19 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/06 00:12:21 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:02:35 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,3 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 		ft_memcpy(dest, src, len);
 	return (dest);
 }
-/* #include <stdio.h>
-
-int	main(void)
-{
-	char src1[50] = "Don't Panic!";
-	char dest1[50];
-
-	printf("Before ft_memmove: dest1 = '%s'\n\n", dest1);
-	ft_memmove(dest1, src1, 12);
-	printf("After ft_memmove: dest1 = '%s')\n\n", dest1);
-
-	return (0);
-} */

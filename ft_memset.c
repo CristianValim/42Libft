@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 13:47:01 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/06 00:11:34 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:02:39 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	char str[12] = "Don't Panic!";
-	printf("Before ft_memset(): %s\n", str);
-
-	ft_memset(str + 6, '@', 5 * sizeof(char));
-
-	printf("After ft_memset():  %s\n", str);
-	printf("Ret is:  %s\n", ft_memset(str + 6, '@', 5 * sizeof(char)));
-	return (0);
-} */

@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 21:57:05 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 21:21:38 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 18:06:37 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,10 @@ char	**ft_split(char const *s, char c)
 	{
 		splitted[i] = fill_str(s, c, &start);
 		if (!splitted[i])
+		{
 			freeing(splitted, i);
+			return (NULL);
+		}
 		i++;
 	}
 	splitted[words] = NULL;
@@ -80,25 +83,25 @@ static char	*fill_str(const char *s, char c, int *start)
 {
 	int		i;
 	int		len;
-	char	*word;
+	char	*str;
 
 	i = 0;
 	len = 0;
-	while (s[*start] && s[*start] == c)
+	while (s[*start] == c)
 		(*start)++;
-	while (s[*start] && s[*start + len] != c)
+	while (s[*start + len] && s[*start + len] != c)
 		len++;
-	word = ft_calloc((len + 1), sizeof(char));
-	if (!word)
+	str = ft_calloc((len + 1), sizeof(char));
+	if (!str)
 		return (NULL);
 	while (i < len)
 	{
-		word[i] = s[*start + i];
+		str[i] = s[*start + i];
 		i++;
 	}
-	word[len] = '\0';
+	str[i] = '\0';
 	*start = *start + len;
-	return (word);
+	return (str);
 }
 
 /* Frees the memory allocated for the array of strings.
@@ -112,17 +115,3 @@ static void	*freeing(char **splitted, int i)
 	free(splitted);
 	return (NULL);
 }
-/* int	main(void)
-{
-	char **result = ft_split("Hello     world     from     42", ' ');
-	int i = 0;
-
-	while (result[i])
-	{
-		printf("String %d: %s\n", i, result[i]);
-		free(result[i]);
-		i++;
-	}
-	free(result);
-	return (0);
-} */

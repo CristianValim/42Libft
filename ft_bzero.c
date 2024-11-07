@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:31:21 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 20:37:04 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:02:17 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,3 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	char str[12] = "Don't Panic!";
-	printf("Before ft_bzero(): %s\n", str);
-
-	ft_bzero(str + 6, 6);
-
-	printf("After ft_bzero():  %s\n", str);
-	return (0);
-} */

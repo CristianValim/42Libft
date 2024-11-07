@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:39:44 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 23:19:57 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:07:05 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,3 @@ char	*ft_strrchr(const char *s, int c)
 		last_char = (char *)s;
 	return (last_char);
 }
-
-/* #include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char str[] = "AA\0B";
-
-	printf("Found:%s\n", ft_strrchr(str, 'B'));
-	printf("Found:%s\n", strrchr(str, 'B'));
-	return (0);
-} */

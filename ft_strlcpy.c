@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:12:38 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/06 00:16:38 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 15:55:24 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,24 +32,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 			src++;
 		}
 		if (size == 0)
-			if (size != 0)
-				*dest = '\0';
+			*dest = '\0';
 	}
 	while (*src)
 		src++;
 	return (src - src_start);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	char			str_old[] = "Hello World, Don't Panic!";
-	char			str_new[12];
-	unsigned int	length;
-
-	length = ft_strlcpy(str_new, str_old, sizeof(str_new));
-	printf("New string is: %s\n", str_new);
-	printf("Length of original string: %u\n", length);
-	return (0);
-} */

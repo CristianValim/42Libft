@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:58:11 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/05 23:00:06 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:02:57 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,22 +34,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	*string = '\0';
 	return (start);
 }
-
-/* char	to_uppercase(unsigned int index, char c)
-{
-	(void)index;
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
-}
-
-int	main(void)
-{
-	char *result = ft_strmapi("Hello World!", to_uppercase);
-	if (result)
-	{
-		printf("Resultado: %s\n", result);
-		free(result);
-	}
-	return (0);
-} */

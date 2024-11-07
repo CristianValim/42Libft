@@ -6,19 +6,18 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 01:18:47 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/06 01:18:48 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/07 19:34:11 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//	For the full documentation and tests access:
+//	https://github.com/CristianValim/42Libft
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
 # include <stdlib.h>
 # include <unistd.h>
-
-// Conversion Functions
-int					ft_atoi(const char *str);
-char				*ft_itoa(int n);
 
 // Memory Management Functions
 void				ft_bzero(void *s, size_t n);
@@ -44,25 +43,26 @@ char				*ft_strrchr(const char *s, int c);
 char				*ft_strtrim(const char *s1, const char *set);
 char				*ft_substr(const char *s, unsigned int start, size_t len);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
+char				**ft_split(char const *s, char c);
 
-// Character Checking Functions
+// Character Checking Functions && Conversion Functions
+char				*ft_itoa(int n);
+int					ft_atoi(const char *str);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
-
-// Character Conversion Functions
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 
-// File Descriptor Functions
+// File Descriptor Functions (Bonus)
 void				ft_putchar_fd(char c, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr_fd(char *s, int fd);
 
-// Linked List Functions
+// Linked List Functions (Bonus)
 typedef struct s_list
 {
 	void			*content;
