@@ -6,16 +6,11 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:30:39 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/07 20:30:51 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:05:58 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
 /* Outputs an integer to a file descriptor.
 (int n) > The integer to output.
