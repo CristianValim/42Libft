@@ -6,7 +6,7 @@
 /*   By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 01:18:47 by cvalim-d          #+#    #+#             */
-/*   Updated: 2024/11/07 19:34:11 by cvalim-d         ###   ########.fr       */
+/*   Updated: 2024/12/19 14:05:33 by cvalim-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -29,6 +30,7 @@ void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memset(void *s, int c, size_t len);
 
 // String Manipulation Functions
+int					ft_printf(const char *format_string, ...);
 char				*ft_strdup(const char *s);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strjoin(const char *s1, const char *s2);

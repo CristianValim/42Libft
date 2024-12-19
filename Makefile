@@ -6,7 +6,7 @@
 #    By: cvalim-d <cvalim-d@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/06 00:22:30 by cvalim-d          #+#    #+#              #
-#    Updated: 2024/11/07 20:00:44 by cvalim-d         ###   ########.fr        #
+#    Updated: 2024/12/19 14:06:06 by cvalim-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRC	=																			\
 	ft_strmapi.c		ft_strnstr.c		ft_strncmp.c	ft_strtrim.c		\
 	ft_substr.c			ft_tolower.c		ft_toupper.c	ft_itoa.c		 	\
 	ft_striteri.c		ft_isascii.c		ft_memmove.c	ft_putstr_fd.c		\
-	ft_strlcpy.c		ft_strrchr.c
+	ft_strlcpy.c		ft_strrchr.c		ft_printf.c
 
 # Bonus source files
 BONUS_SRC  =																	\
